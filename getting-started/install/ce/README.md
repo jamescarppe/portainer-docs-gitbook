@@ -4,9 +4,9 @@ The Community Edition of Portainer is free and open source and is straightfoward
 
 Please choose whether you're performing a new installation of Portainer or adding to an existing installation.
 
-{% page-ref page="new/" %}
+{% page-ref page="server/" %}
 
-{% page-ref page="existing/" %}
+{% page-ref page="agent/" %}
 
 
 
