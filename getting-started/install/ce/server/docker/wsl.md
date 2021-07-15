@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Portainer is comprised of two elements, the **Portainer Server**, and the **Portainer Agent**. Both elements run as lightweight Docker containers on a Docker engine. This document will help you install the Portainer Server container on your Windows environment with WSL and Docker Desktop. To add a new WSL / Docker Desktop environment to an existing Portainer Server installation, please refer to the [Portainer Agent installation instructions](../../agent/docker/linux.md).
+Portainer is comprised of two elements, the **Portainer Server**, and the **Portainer Agent**. Both elements run as lightweight Docker containers on a Docker engine. This document will help you install the Portainer Server container on your Windows environment with WSL and Docker Desktop. To add a new WSL / Docker Desktop environment to an existing Portainer Server installation, please refer to the [Portainer Agent installation instructions](../../agent/docker/wsl.md).
 
 To get started, you will need:
 
