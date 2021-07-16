@@ -4,7 +4,7 @@ If you already have an existing installation of Portainer and wish to add anothe
 
 {% page-ref page="docker/" %}
 
-{% page-ref page="swarm.md" %}
+{% page-ref page="swarm/" %}
 
 {% page-ref page="kubernetes.md" %}
 

@@ -17,7 +17,7 @@ The installation instructions also make the following assumptions about your env
 * Docker is running as root. Portainer with rootless Docker has some limitations, and requires additional configuration.
 * If your nodes are using DNS records to communicate, that all records are resolvable across the cluster.
 
-### Portainer Server Deployment
+### Deployment
 
 Portainer can be directly deployed as a service in your Docker cluster. Note that this method will automatically deploy a single instance of the Portainer Server, and deploy the Portainer Agent as a global service on every node in your cluster.
 
@@ -33,23 +33,26 @@ Then, use the downloaded YML manifest to deploy your stack:
 docker stack deploy -c portainer-agent-stack.yml portainer
 ```
 
-### Portainer Agent Deployment
+Portainer Server and the Agents have now been installed. You can check to see whether the Portainer Server and Agent containers have started by running `docker ps`:
 
-To deploy Portainer Agent on a remote swarm cluster as a swarm service, run the following commands on a manager node in the remote cluster.
-
-First, create the network:
-
-```text
-docker network create --driver overlay --attachable portainer_agent_network
+```bash
+root@manager01:~# docker ps
+CONTAINER ID   IMAGE                           COMMAND                  CREATED              STATUS              PORTS                NAMES
+59ee466f6b15   portainer/agent:latest          "./agent"                About a minute ago   Up About a minute                        portainer_agent.xbb8k6r7j1tk9gozjku7e43wr.5sa6b3e8cl6hyu0snlt387sgv
+2db7dd4bfba0   portainer/portainer-ce:latest   "/portainer -H tcp:/…"   About a minute ago   Up About a minute   8000/tcp, 9000/tcp   portainer_portainer.1.gpuvu3pqmt1m19zxfo44v7izx
 ```
 
-Then, deploy the agent:
+### Logging In
 
-```text
-docker service create --name portainer_agent --network portainer_agent_network \
-    --publish mode=host,target=9001,published=9001 -e AGENT_CLUSTER_ADDR=tasks.portainer_agent \
-    --mode global --mount type=bind,src=//var/run/docker.sock,dst=/var/run/docker.sock \
-    --mount type=bind,src=//var/lib/docker/volumes,dst=/var/lib/docker/volumes \
-    --mount type=bind,src=/,dst=/host portainer/agent
+Now that the installation is complete, you can log into your Portainer Server instance by opening a web browser and going to:
+
+```bash
+http://localhost:9000/
 ```
+
+Replace `localhost` with the relevant IP address or FQDN if needed, and adjust the port if you changed it from `9000` earlier.
+
+You will be presented with the initial setup page for Portainer Server.
+
+{% page-ref page="../../setup.md" %}
 
