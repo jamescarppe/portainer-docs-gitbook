@@ -1,10 +1,12 @@
 # The Portainer Architecture
 
-Portainer is comprised of two elements, the Portainer Server, and the Portainer Agent. Both elements run as lightweight containers on your existing containerized infrastructure. The Portainer Agent should be deployed to each node in your cluster and configured to report back to the Portainer Server container. A single Portainer Server will accept connections from any number of Portainer Agents, providing the ability to manage multiple clusters from one centralized interface.
+Portainer is comprised of two elements, the **Portainer Server** and the **Portainer Agent**. Both elements run as lightweight containers on your existing containerized infrastructure. The Portainer Agent should be deployed to each node in your cluster and configured to report back to the Portainer Server container. A single Portainer Server will accept connections from any number of Portainer Agents, providing the ability to manage multiple clusters from one centralized interface.
 
 To provide this, the Portainer Server container requires data persistence. The Portainer Agents are stateless however, with data being shipped back to the Portainer Server container.
 
+{% hint style="info" %}
 At present, we do not support running multiple instances of the Portainer Server container to manage the same clusters. As such, we generally recommend running Portainer Server on a specific management node, with the Portainer Agents deployed across the rest of your nodes.
+{% endhint %}
 
 ### Agent vs Edge Agent
 

@@ -4,5 +4,7 @@ Welcome to the official Portainer Documentation. This is an open source document
 
 If this is your first time with Portainer, we recommend working through our Getting Started guide:
 
+{% page-ref page="getting-started/intro.md" %}
+
 
 
