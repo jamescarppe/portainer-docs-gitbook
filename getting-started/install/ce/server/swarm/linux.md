@@ -1,6 +1,6 @@
 # Install Portainer with Docker Swarm on Linux
 
-Portainer is comprised of two elements, the **Portainer Server** and the **Portainer Agent**. Both elements run as lightweight Docker containers on a Docker engine.
+Portainer is comprised of two elements, the **Portainer Server** and the **Portainer Agent**. Both elements run as lightweight Docker containers on a Docker engine. This document will help you deploy the Portainer Server and Agent containers on your Linux environment. To add a new Linux Swarm environment to an existing Portainer Server installation, please refer to the [Portainer Agent installation instructions](../../agent/swarm/linux.md).
 
 To get started, you will need:
 
