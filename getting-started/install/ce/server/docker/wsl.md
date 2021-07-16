@@ -39,7 +39,7 @@ Now that the installation is complete, you can log into your Portainer Server in
 http://localhost:9000/
 ```
 
-Replace `localhost` with the relevant IP address of FQDN if needed, and adjust the port if you changed it from `9000` earlier.
+Replace `localhost` with the relevant IP address or FQDN if needed, and adjust the port if you changed it from `9000` earlier.
 
 You will be presented with the initial setup page for Portainer Server.
 
