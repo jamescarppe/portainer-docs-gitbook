@@ -42,7 +42,7 @@ By default, Portainer's web interface and API are exposed over HTTP. This is not
 
 ### Ports
 
-In order to access the UI and API, and for the Portainer Server instance and the Portainer Agents to communicate, certain ports need to be accessible. Portainer Server listens on port 9000 for the UI and API \(or 30777 for Kubernetes with NodePort\) and exposes a TCP tunnel server on port 8000 \(this second port is optional and only needed to use Edge Compute features with Edge agents\). The Portainer Agents listen on port 9001 \(or 30778 for Kubernetes with NodePort\).
+In order to access the UI and API, and for the Portainer Server instance and the Portainer Agents to communicate, certain ports need to be accessible. Portainer Server listens on port `9000` for the UI and API \(or `30777` for Kubernetes with NodePort\) and exposes a TCP tunnel server on port `8000` \(this second port is optional and only needed to use Edge Compute features with Edge agents\). The Portainer Agents listen on port `9001` \(or `30778` for Kubernetes with NodePort\).
 
 All of these ports can be changed at installation time.
 
