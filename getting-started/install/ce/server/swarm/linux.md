@@ -12,7 +12,7 @@ To get started, you will need:
 * Swarm mode enabled and working, including the overlay network for the swarm service communication
 * `sudo` access on the manager node of your swarm cluster
 * By default, Portainer will expose the UI over port `9000` and expose a TCP tunnel server over port `8000`. The latter is optional and is only required if you plan to use the Edge compute features with Edge agents.
-* The manager and worker nodes must be able to communicate with each other over port `9000`.
+* The manager and worker nodes must be able to communicate with each other over port `9001`.
 
 The installation instructions also make the following assumptions about your environment:
 
@@ -58,5 +58,5 @@ Replace `localhost` with the relevant IP address or FQDN if needed, and adjust t
 
 You will be presented with the initial setup page for Portainer Server.
 
-{% page-ref page="../../setup.md" %}
+{% page-ref page="../setup.md" %}
 

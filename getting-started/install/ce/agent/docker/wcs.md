@@ -4,7 +4,7 @@
 
 Portainer uses the **Portainer Agent** container to communicate with the **Portainer Server** instance and provide access to the node's resources. This document will outline how to install the Portainer Agent on your node and how to connect to it from your Portainer Server instance. If you do not have a working Portainer Server instance yet, please refer to the [Portainer Server installation guide](../../server/docker/wcs.md) first.
 
-To get started, you will need:
+You will need:
 
 * The latest version of Docker installed and working
 * Administrator access on the machine that will host your Portainer Server instance

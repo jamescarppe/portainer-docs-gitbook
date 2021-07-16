@@ -50,7 +50,7 @@ Replace `localhost` with the relevant IP address or FQDN if needed, and adjust t
 
 You will be presented with the initial setup page for Portainer Server.
 
-{% page-ref page="../../setup.md" %}
+{% page-ref page="../setup.md" %}
 
 
 

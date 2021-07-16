@@ -1,8 +1,8 @@
-# Install Portainer Agent with Docker Swarm on Linux
+# Install Portainer Agent with Docker Swarm on WSL / Docker Desktop
 
 ### Introduction
 
-Portainer uses the **Portainer Agent** container to communicate with the **Portainer Server** instance and provide access to the node's resources. This document will outline how to install the Portainer Agent on your node and how to connect to it from your Portainer Server instance. If you do not have a working Portainer Server instance yet, please refer to the [Portainer Server installation guide](../../server/swarm/linux.md) first.
+Portainer uses the **Portainer Agent** container to communicate with the **Portainer Server** instance and provide access to the node's resources. This document will outline how to install the Portainer Agent on your node and how to connect to it from your Portainer Server instance. If you do not have a working Portainer Server instance yet, please refer to the [Portainer Server installation guide](../../server/swarm/wsl.md) first.
 
 ### Deployment
 
