@@ -4,6 +4,7 @@
 
 ## Getting Started
 
+* [Introduction](getting-started/intro.md)
 * [The Portainer Architecture](getting-started/the-portainer-architecture.md)
 * [General Prerequisites](getting-started/general-prerequisites.md)
 * [Installing Portainer](getting-started/install/README.md)
