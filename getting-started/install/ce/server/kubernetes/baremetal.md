@@ -1,5 +1,7 @@
 # Install Portainer with Kubernetes on your Self-Managed Infrastructure
 
+{% embed url="https://www.youtube.com/watch?v=wxXi\_bmX\_Zw" %}
+
 ## Introduction
 
 Portainer is comprised of two elements, the **Portainer Server** and the **Portainer Agent**. Both elements run as lightweight containers on Kubernetes.
@@ -118,6 +120,36 @@ kubectl apply -n portainer -f https://raw.githubusercontent.com/portainer/k8s/ma
 ```
 {% endtab %}
 {% endtabs %}
+
+## Logging In
+
+Now that the installation is complete, you can log into your Portainer Server instance. Depending on how you chose to expose your Portainer installation, open a web browser and navigate to the following URL:
+
+{% tabs %}
+{% tab title="NodePort" %}
+```bash
+http://localhost:30777/
+```
+{% endtab %}
+
+{% tab title="Ingress" %}
+```bash
+http://localhost:9000/
+```
+{% endtab %}
+
+{% tab title="Load Balancer" %}
+```bash
+http://localhost:9000/
+```
+{% endtab %}
+{% endtabs %}
+
+Replace `localhost` with the relevant IP address or FQDN if needed, and adjust the port if you changed it earlier.
+
+You will be presented with the initial setup page for Portainer Server.
+
+{% page-ref page="../setup.md" %}
 
 
 
