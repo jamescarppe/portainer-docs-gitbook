@@ -18,3 +18,5 @@ Portainer is run exclusively on your servers, within your network, behind your o
 
 While we do \(optionally\) collect anonymous usage analytics from Portainer installations, we remain compliant with GDPR. The collection of data can be disabled at installation \(or at any time afterwards\), and if your installation is air-gapped, collection will silently fail without any adverse effect.
 
+{% page-ref page="general-prerequisites.md" %}
+

@@ -22,3 +22,5 @@ In order to access the UI and API, and for the Portainer Server instance and the
 
 All of these ports can be changed at installation time.
 
+{% page-ref page="install/" %}
+
