@@ -24,6 +24,7 @@
         * [Install Portainer Agent with Docker on WSL / Docker Desktop](getting-started/install/ce/agent/docker/wsl.md)
         * [Install Portainer Agent with Docker on Windows Container Service](getting-started/install/ce/agent/docker/wcs.md)
       * [Docker Swarm](getting-started/install/ce/agent/swarm.md)
+      * [Install Portainer Agent with Docker Swarm on Linux](getting-started/install/ce/agent/swarm-1.md)
       * [Kubernetes](getting-started/install/ce/agent/kubernetes.md)
     * [Initial Setup](getting-started/install/ce/setup.md)
   * [Business Edition](getting-started/install/be.md)
