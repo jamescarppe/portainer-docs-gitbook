@@ -1,6 +1,6 @@
 # Install Portainer with Docker Swarm on Windows Container Service
 
-### Introduction
+## Introduction
 
 Portainer is comprised of two elements, the **Portainer Server**, and the **Portainer Agent**. Both elements run as lightweight Docker containers on a Docker engine. This document will help you install the Portainer Server container on your Windows server with Windows Containers. To add a new WCS environment to an existing Portainer Server installation, please refer to the Portainer Agent installation instructions.
 
@@ -16,7 +16,7 @@ The installation instructions also make the following assumption about your envi
 
 * If your nodes are using DNS records to communicate, that all records are resolvable across the cluster.
 
-### Preparation
+## Preparation
 
 To run Portainer Server in a Windows Server/Desktop Environment you need to create exceptions in the firewall. These can easily be added through PowerShell by running the following commands:
 
@@ -39,7 +39,7 @@ Install-Package -Name docker -ProviderName DockerMsftProvider
 
 Once this is complete you will need to restart your Windows server. After the restart completes, you're ready to install Portainer itself.
 
-### Deployment
+## Deployment
 
 Portainer can be directly deployed as a service in your Docker cluster. Note that this method will automatically deploy a single instance of the Portainer Server, and deploy the Portainer Agent as a global service on every node in your cluster.
 
@@ -55,7 +55,7 @@ This will download the YML manifest. To deploy using this, run:
 docker stack deploy --compose-file=portainer_windows_stack.yml portainer
 ```
 
-### Logging In
+## Logging In
 
 Now that the installation is complete, you can log into your Portainer Server instance by opening a web browser and going to:
 

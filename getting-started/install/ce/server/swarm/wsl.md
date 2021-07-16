@@ -1,6 +1,6 @@
 # Install Portainer with Docker Swarm on WSL / Docker Desktop
 
-### Introduction
+## Introduction
 
 Portainer is comprised of two elements, the **Portainer Server**, and the **Portainer Agent**. Both elements run as lightweight Docker containers on a Docker engine. This document will help you install the Portainer Server container on your Windows environment with WSL and Docker Desktop. To add a new WSL / Docker Desktop Swarm environment to an existing Portainer Server installation, please refer to the [Portainer Agent installation instructions](../../agent/docker/wsl.md).
 
@@ -20,7 +20,7 @@ The installation instructions also make the following assumptions about your env
 * Docker is running as root. Portainer with rootless Docker has some limitations, and requires additional configuration.
 * If your nodes are using DNS records to communicate, that all records are resolvable across the cluster.
 
-### Deployment
+## Deployment
 
 Portainer can be directly deployed as a service in your Docker Swarm cluster. Note that this method will automatically deploy a single instance of the Portainer Server, and deploy the Portainer Agent as a global service on every node in your cluster.
 
@@ -42,7 +42,7 @@ Then, use the downloaded YML manifest to deploy your stack:
 docker stack deploy -c portainer-agent-stack.yml portainer
 ```
 
-### Logging In
+## Logging In
 
 Now that the installation is complete, you can log into your Portainer Server instance by opening a web browser and going to:
 

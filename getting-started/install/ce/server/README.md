@@ -6,7 +6,7 @@ Please choose the environment that you intend to use for your Portainer installa
 
 {% page-ref page="swarm/" %}
 
-{% page-ref page="kubernetes.md" %}
+{% page-ref page="kubernetes/" %}
 
 
 

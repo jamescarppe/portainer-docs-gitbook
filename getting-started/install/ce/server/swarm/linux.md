@@ -2,7 +2,7 @@
 
 {% embed url="https://www.youtube.com/watch?v=L80QDuix5RE" %}
 
-### Introduction
+## Introduction
 
 Portainer is comprised of two elements, the **Portainer Server** and the **Portainer Agent**. Both elements run as lightweight Docker containers on a Docker engine. This document will help you deploy the Portainer Server and Agent containers on your Linux environment. To add a new Linux Swarm environment to an existing Portainer Server installation, please refer to the [Portainer Agent installation instructions](../../agent/swarm/linux.md).
 
@@ -21,7 +21,7 @@ The installation instructions also make the following assumptions about your env
 * Docker is running as root. Portainer with rootless Docker has some limitations, and requires additional configuration.
 * If your nodes are using DNS records to communicate, that all records are resolvable across the cluster.
 
-### Deployment
+## Deployment
 
 Portainer can be directly deployed as a service in your Docker cluster. Note that this method will automatically deploy a single instance of the Portainer Server, and deploy the Portainer Agent as a global service on every node in your cluster.
 
@@ -46,7 +46,7 @@ CONTAINER ID   IMAGE                           COMMAND                  CREATED 
 2db7dd4bfba0   portainer/portainer-ce:latest   "/portainer -H tcp:/…"   About a minute ago   Up About a minute   8000/tcp, 9000/tcp   portainer_portainer.1.gpuvu3pqmt1m19zxfo44v7izx
 ```
 
-### Logging In
+## Logging In
 
 Now that the installation is complete, you can log into your Portainer Server instance by opening a web browser and going to:
 

@@ -1,6 +1,6 @@
 # Install Portainer with Docker on WSL / Docker Desktop
 
-### Introduction
+## Introduction
 
 Portainer is comprised of two elements, the **Portainer Server**, and the **Portainer Agent**. Both elements run as lightweight Docker containers on a Docker engine. This document will help you install the Portainer Server container on your Windows environment with WSL and Docker Desktop. To add a new WSL / Docker Desktop environment to an existing Portainer Server installation, please refer to the [Portainer Agent installation instructions](../../agent/docker/wsl.md).
 
@@ -17,7 +17,7 @@ The installation instructions also make the following assumptions about your env
 * SELinux is disabled within the Linux distribution used by WSL. If you require SELinux, you will need to pass the `--privileged` flag to Docker when deploying Portainer.
 * Docker is running as root. Portainer with rootless Docker has some limitations, and requires additional configuration.
 
-### Deployment
+## Deployment
 
 First, create the volume that Portainer Server will use to store its database:
 
@@ -39,7 +39,7 @@ CONTAINER ID   IMAGE                                             COMMAND        
 f4ab79732007   portainer/portainer-ce                            "/portainer"             2 weeks ago    Up 29 hours   0.0.0.0:8000->8000/tcp, :::8000->8000/tcp, 0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   portainer
 ```
 
-### Logging In
+## Logging In
 
 Now that the installation is complete, you can log into your Portainer Server instance by opening a web browser and going to:
 

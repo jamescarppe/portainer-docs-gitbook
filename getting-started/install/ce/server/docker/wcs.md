@@ -1,6 +1,6 @@
 # Install Portainer with Docker on Windows Container Service
 
-### Introduction
+## Introduction
 
 Portainer is comprised of two elements, the **Portainer Server**, and the **Portainer Agent**. Both elements run as lightweight Docker containers on a Docker engine. This document will help you install the Portainer Server container on your Windows server with Windows Containers. To add a new WCS environment to an existing Portainer Server installation, please refer to the [Portainer Agent installation instructions](../../agent/docker/wcs.md).
 
@@ -10,7 +10,7 @@ To get started, you will need:
 * Administrator access on the machine that will host your Portainer Server instance
 * By default, Portainer Server will expose the UI over port `9000` and expose a TCP tunnel server over port `8000`. The latter is optional and is only required if you plan to use the Edge compute features with Edge agents.
 
-### Preparation
+## Preparation
 
 To run Portainer Server in a Windows Server/Desktop Environment you need to create exceptions in the firewall. These can easily be added through PowerShell by running the following commands:
 
@@ -33,7 +33,7 @@ Install-Package -Name docker -ProviderName DockerMsftProvider
 
 Once this is complete you will need to restart your Windows server. After the restart completes, you're ready to install Portainer itself.
 
-### Deployment
+## Deployment
 
 First, create the volume that Portainer Server will use to store its database:
 
@@ -47,7 +47,7 @@ Then, download and install the Portainer Server container:
 docker run -d -p 9000:9000 --name portainer --restart always -v \.\pipe\docker_engine:\.\pipe\docker_engine -v portainer_data:C:\data portainer/portainer-ce
 ```
 
-### Logging In
+## Logging In
 
 Now that the installation is complete, you can log into your Portainer Server instance by opening a web browser and going to:
 
