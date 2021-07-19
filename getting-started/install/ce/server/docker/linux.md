@@ -1,3 +1,7 @@
+---
+description: Installation instructions for Portainer CE with Docker on Linux
+---
+
 # Install Portainer with Docker on Linux
 
 ## Introduction
