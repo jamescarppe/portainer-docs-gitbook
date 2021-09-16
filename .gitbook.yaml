@@ -2,5 +2,5 @@ root: ./
 
 redirects:
   test: ./getting-started/install.md
-  test2: ./portainer-docs/getting-started/install.md
+  test2: /portainer-docs/getting-started/install.md
   v2.0-be/start: ./v/be-2.7/getting-started/intro.md
