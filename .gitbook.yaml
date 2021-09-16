@@ -1,2 +1,3 @@
 redirects:
+  test: ./getting-started/install
   v2.0-be/start: ./be-2.7/getting-started/intro
